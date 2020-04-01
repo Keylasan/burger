@@ -1,23 +1,22 @@
-
 <center>
-<form class="create-form">
-  <div class="form-group" class= "orderLabel">
-    <label for="burger_name">Order Your Favorite Plant-Based Burger:</label>
-    <br>
+  <form class="create-form">
+    <div class="form-group" class="orderLabel">
+      <label for="burger_name">Order Your Favorite Plant-Based Burger:</label>
+      <br>
 
-    <input type="text" id="burgerName" name="burger_name">
-  </div>
-  <!--<div class="form-group">
+      <input type="text" id="burgerName" name="burger_name">
+    </div>
+    <!--<div class="form-group">
     <label for="devoured">Devoured Burgers:</label><br>
 </div>-->
- <button id="submit-button" type="submit" class="btn btn-danger">Order</button>
-</form>
+    <button id="submit-button" type="submit" class="btn btn-danger">Order</button>
+  </form>
 </center>
 
 
 
 <center>
-<div class="col-md-5 p-3 align-self-start">
+  <div class="col-md-5 p-3 align-self-start">
     <div class="col-12">
       <h2>Your Burgers:</h2>
       <ul class="list-group">
@@ -25,18 +24,19 @@
         {{#unless this.devoured}}
         <li>
           <h5>{{this.id}}. {{this.burger_name}}
-            <button type='submit' class="btn btn-danger" data-id="{{this.id}}" data-status="{{this.devoured}}">Eat It!</button>
+            <button type='submit' class="btn btn-danger" data-id="{{this.id}}" data-status="{{this.devoured}}">Eat
+              It!</button>
           </h5>
         </li>
         {{/unless}}
         {{/each}}
       </ul>
     </div>
-    </center>
+</center>
 
 
 <center>
-<div class="row">
+  <div class="row">
     <div class="col-12">
       <h3>Eaten Burgers:</h3>
       <ul class="list-group">
@@ -44,11 +44,11 @@
         {{#if this.devoured}}
         <li>
           <h5>{{this.id}}. {{this.burger_name}}
-        </h5>
+          </h5>
         </li>
         {{/if}}
         {{/each}}
       </ul>
     </div>
   </div>
-  </center>
+</center>
