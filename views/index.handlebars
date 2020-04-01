@@ -2,7 +2,7 @@
 
 <ul>
   {{#each burgers}}
-    {{#unless devoured}}
+    {{#unless this.devoured}}
       {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
@@ -21,3 +21,5 @@
     </div>
   <button type="submit">Add Burger</button>
 </form>
+
+
