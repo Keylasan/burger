@@ -17,9 +17,10 @@
     burger.insertOne([
       "burger_name", "devoured"
     ], [
-      req.body.name, false
+      req.body.burger_name, "0"
     ], function(result) {
-        console.log(res);
+        res.json({id: result.instertID});
+
     });
   });
  
