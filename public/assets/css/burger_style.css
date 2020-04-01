@@ -1,18 +1,30 @@
 body {
-    background-color: #8d64788a;
+    background-color: #9f8650;
   }
   
+.orderLabel{
+
+font-size: 30px;
+padding:15px;
+margin:15px;
+}
+
+
+#burgerName{
+  height: 50%;
+  width: 50%;
+}
+
   img {
     width: 20%;
   }
   
   title {
-    color: #4d030f;
+    color: #d21e3c;
   }
   
   .order{
     color: #18e109;
-    font-weight: bold;
     font-size: 14px;
   }
   
@@ -20,6 +32,15 @@ body {
   .yum{
     color: #18e109;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
   }
   
+
+  li{
+    list-style: none;
+  
+  }
+
+  h3{
+    display: none;
+  }
