@@ -1,8 +1,5 @@
-
- 
 // Object Relational Mapper (ORM)
- 
-// The ?? signs are for swapping out table or column names
+ // The ?? signs are for swapping out table or column names
 // The ? signs are for swapping out other values
 
 
