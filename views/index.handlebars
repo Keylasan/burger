@@ -23,7 +23,7 @@
         {{#each burgers}}
         {{#unless this.devoured}}
         <li>
-          <h5>{{this.id}}. {{this.burger_name}}
+          <h5>{{this.burger_name}}
             <button type='submit' class="status-btn" data-id="{{this.id}}" data-status="{{this.devoured}}">Eat It!</button>
           </h5>
         </li>
@@ -37,12 +37,12 @@
 <center>
   <div class="row">
     <div class="col-12">
-      <h3>Eaten Burgers:</h3>
+      <h2 id="eaten">Eaten Burgers:</h2>
       <ul class="list-group">
         {{#each burgers}}
         {{#if this.devoured}}
         <li>
-          <h5>{{this.id}}. {{this.burger_name}}
+          <h5>{{this.burger_name}}
           </h5>
         </li>
         {{/if}}

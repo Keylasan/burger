@@ -17,13 +17,14 @@ margin:15px;
 
   img {
     width: 20%;
+    border-radius: 8px;
   }
   
   title {
     color: #d21e3c;
   }
   
-  .order{
+  .status-btn{
     color: #18e109;
     font-size: 14px;
   }
@@ -36,8 +37,8 @@ margin:15px;
   }
   
 
-  li{
-    list-style: none;
+  .list-group{
+    list-style-type: none;
   
   }
 
