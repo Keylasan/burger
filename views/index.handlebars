@@ -9,7 +9,7 @@
     <!--<div class="form-group">
     <label for="devoured">Devoured Burgers:</label><br>
 </div>-->
-    <button id="submit-button" type="submit" class="btn btn-danger">Order</button>
+    <button type="submit" class="btn btn-danger">Order</button>
   </form>
 </center>
 
@@ -24,8 +24,7 @@
         {{#unless this.devoured}}
         <li>
           <h5>{{this.id}}. {{this.burger_name}}
-            <button type='submit' class="btn btn-danger" data-id="{{this.id}}" data-status="{{this.devoured}}">Eat
-              It!</button>
+            <button type='submit' class="status-btn" data-id="{{this.id}}" data-status="{{this.devoured}}">Eat It!</button>
           </h5>
         </li>
         {{/unless}}
